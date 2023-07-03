@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">  
+     <menu>
+          <add id="M2M_Debugger::menu"
+               title="Debugger"
+               module="M2M_Debugger"
+               sortOrder="20"
+               resource="Magento_Backend::content" />
+
+          <add id="M2M_Debugger::submenu"
+               title="Debug"
+               module="M2M_Debugger"
+               sortOrder="1"
+               action="m2mdebugger/debugger" 
+               parent="M2M_Debugger::menu"
+               resource="Magento_Backend::content" />
+     </menu>
+</config>
+
+
+<!-- Explanation of Attributes
+id – unique identifier
+title – the title of the menu that will be showing up in the admin
+module – indicates the module
+sortOrder – prioritize the place of menu
+resource – the rule to identify which admin user can see and access this menu
+action – link to the specified admin controller
+parent – defines on which first level menu it depends -->
+
+<!-- action = "frontName/debugger" -->

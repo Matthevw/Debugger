@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+   <argument name="data" xsi:type="array">
+       <item name="buttons" xsi:type="array">
+             <item name="debugger" xsi:type="array">
+                  <item name="label" xsi:type="string" translate="true">Debug</item>
+                  <!-- Napis na przycisku -->
+                  <item name="class" xsi:type="string">primary</item>
+                  <!-- Podstawowy button -->
+                  <item name="url" xsi:type="string">m2mdebugger/debugger/debug</item>
+                  <!-- frontName/folder/plik -->
+              </item>
+       </item>
+   </argument>
+</form>
